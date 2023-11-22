@@ -52,10 +52,3 @@ try:
 
     # Printing descriptive statistics for each measurement
     descriptive_statistics(df, columns_to_plot)
-    
-except FileNotFoundError:
-    print(f"File not found: {charging_data_path}")
-except pd.errors.ParserError:
-    print(f"Parser error in file: {charging_data_path}")
-except Exception as e:
-    print(f"An error occurred: {e}")
