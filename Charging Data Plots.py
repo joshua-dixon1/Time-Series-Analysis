@@ -60,12 +60,3 @@ try:
     descriptive_statistics(df, 'I[A]')
     descriptive_statistics(df, 'Ah[Ah]')
     descriptive_statistics(df, 'Wh[Wh]')
-    
-except FileNotFoundError:
-    print(f"The file {charging_data_path} does not exist.")
-except pd.errors.ParserError:
-    print(f"Error parsing the file {charging_data_path}. Check the separator.")
-except Exception as e:
-    print(f"An error occurred: {e}")
-    
-    
